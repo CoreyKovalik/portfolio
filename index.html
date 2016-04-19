@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Above:  Required Bootstrap meta tags -->
+    <title>P1 Portfilo Site:  Corey Kovalik</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+<!--BEGIN NOTES
+
+Bootstrap breakpoints:
+000-767px
+768-991px
+992-1199px
+1200+ px
+
+___ END NOTES-->
+
+    <!-- Header includes custom logo and main headings
+    Stacks at mobile breakpoint -->
+
+    <header class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-3 col-xs-12 header-stack">
+          <picture>
+            <source srcset="images/coreykovalik_200.png" media="(max-width: 991px)">
+            <source srcset="images/coreykovalik_250.png" media="(min-width: 992px)">
+            <img id="logo" src="images/coreykovalik_200.png" alt="logo">
+          </picture>
+        </div>
+        <div class="col-md-9 col-sm-9 col-xs-12 text-right text-uppercase">
+          <h1 class="header-stack">Corey Kovalik</h1>
+          <h4 class="header-stack subheader">Front-end Ninja</h4>
+        </div>
+      </div>
+    </header>
+
+    <!--Bootstrap Nav Dropdown -->
+
+    <nav class="container">
+      <div class="row">
+        <div class="dropdown visible-xs col-xs-12 text-center">
+          <button class="btn btn-sm btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <span class="glyphstyle glyphicon glyphicon-option-vertical" aria-hidden="true"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="index.html">Portfolio</a></li>
+            <li role="separator" class="divider"></li>
+            <li class="dropdown-header">Projects</li>
+            <li><a href="#resume">Online Resume</a></li>
+            <li><a href="#arcade">Classic Arcade Game Clone</a></li>
+            <li><a href="#opti">Website Optimization</a></li>
+            <li><a href="#silicon">Neighborhood Map</a></li>
+            <li><a href="#health">Health Tracker</a></li>
+            <li><a href="#rss">Feed Reader Testing</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#footer">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Styled HR -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-xs-12"><hr class="style"></div>
+      </div>
+    </div>
+
+    <!-- Large aesthetic banner followed by 'Featured Work' heading
+    Banner inside picture element, but includes fallback to srcset resulting a resizing responsive image
+    and has an ultimate fallback to image src -->
+
+    <main class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <picture>
+            <source srcset="images/bluebg_1x.jpg 1x, images/bluebg_2x.jpg 2x" media="(max-width: 767px)">
+            <source srcset="images/bluebg_720.jpg 720w" media="(min-width: 768px) and (max-width: 991px)" sizes="100vw">
+            <source srcset="images/bluebg_940.jpg 940w" media="(min-width: 992px) and (max-width: 1199px)" sizes="100vw">
+            <source srcset="images/bluebg_1140.jpg 1140w" media="(min-width: 1200px)" sizes="100vw">
+            <img class="img-responsive" src="images/bluebg_1140.jpg" srcset="images/bluebg_300.jpg 300w, images/bluebg_350.jpg 350w, images/bluebg_400.jpg 400w, images/bluebg_450.jpg 450w, images/bluebg_500.jpg 500w, images/bluebg_550.jpg 550w, images/bluebg_600.jpg 600w, images/bluebg_720.jpg 720w, images/bluebg_940.jpg 940w, images/bluebg_1140.jpg 1140w" sizes="100vw" alt="Large aesthetic banner">
+          </picture>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Featured Work</h2>
+        </div>
+      </div>
+    </main>
+
+    <!-- Container with links to all 6 upcoming projects with relevant pictures all sized with grunt.  All divs were placed in a single row so that they would stack appropriately in a 3x2, 2x3, or 1x6 grid based on screen size.  2x3 will most likely be on a resized desktop window, while 3x2 will be desktop, and 1x6 will be mobile. -->
+
+    <section class="container">
+      <div class="row text-center">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <img class="img-responsive" srcset="images/resume-720x360_2x.jpg 2x" src="images/resume-360x180Center.jpg" alt="Scrabble words on table">
+          <h4>Online Resume</h4>
+          <p><a id="resume" href="#logo">/link/Resume/</a></p>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <img class="img-responsive" srcset="images/arcade-720x360_2x.jpg 2x" src="images/arcade-360x180South.jpg" alt="Arcade joystick and buttons">
+          <h4>Classic Arcade Game Clone</h4>
+          <p><a id="arcade" href="#logo">/link/Frogger/</a></p>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <img class="img-responsive" srcset="images/opti-720x360_2x.jpg 2x" src="images/opti-360x180SouthWest.jpg" alt="Ethernet cable on laptop keyboard">
+          <h4>Website Optimization</h4>
+          <p><a id="opti" href="#logo">/link/Optimization/</a></p>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <img class="img-responsive" srcset="images/siliconvalley-720x360_2x.jpg 2x" src="images/siliconvalley-360x180West.jpg" alt="Landscape view of Silicon Valley, CA">
+          <h4>Neighborhood Map Project</h4>
+          <p><a id="silicon" href="#logo">/link/SiliconValley/</a></p>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <img class="img-responsive" srcset="images/health-720x360_2x.jpg 2x" src="images/health-360x180Center.jpg" alt="Granny smith apple with tape measure around it">
+          <h4>Health Tracker</h4>
+          <p><a id="health" href="#logo">/link/Health/</a></p>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <img class="img-responsive" srcset="images/rss-720x360_2x.jpg 2x" src="images/rss-360x180Center.jpg" alt="RSS Feed logo on faceless avatars">
+          <h4>Feed Reader Testing</h4>
+          <p><a id="rss" href="#logo">/link/RSS/</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer with social media icons & contact information, separated with styled HR -->
+
+    <footer class="container">
+      <div class="row">
+        <div class="col-md-12"><hr class="style"></div>
+      </div>
+      <div class="row text-center">
+        <div id="footer" class="col-md-12">
+            <a href="mailto:coreykovalik@gmail.com" class="zoc-style zocial-gmail" title="Send an e-mail to coreykovalik@gmail.com"></a>
+            <a href="https://www.linkedin.com/in/corey-kovalik-2680186b" class="zoc-style zocial-linkedin" title="Linkedin Profile"></a>
+            <a href="https://twitter.com/CoreyKovalik" class="zoc-style zocial-twitter" title="Twitter Profile"></a>
+            <a href="https://github.com/Immotal" class="zoc-style zocial-github" title="GitHub Profile"></a>
+            <a href="https://plus.google.com/101143624948535268839" class="zoc-style zocial-googleplus" title="Google+ profile"></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

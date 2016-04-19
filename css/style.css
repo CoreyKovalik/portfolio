@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster+Two);
+@import url(https://fonts.googleapis.com/css?family=News+Cycle);
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+/* zocial */
+[class*="zocial-"]:before {
+	font-family: "zocial", sans-serif;
+}
+
+a.zoc-style {
+	font-size: 2em;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+body {
+	font-family: "Lobster Two", cursive;
+}
+
+h1 {
+	padding-top: 1.75em;
+	font-family: "News Cycle", sans-serif;
+}
+
+h2 {
+	color: #57588a;
+}
+
+h4.subheader {
+	color: #57588a;
+}
+
+img {
+	margin: 0 auto;
+}
+
+a {
+	color: #49708a;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+hr.style {
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+@media (max-width: 767px) {
+h2 {
+	text-align: center;
+}
+
+.header-stack,
+h1.header-stack,
+h4.header-stack {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+h1.header-stack {
+	padding: 10px;
+}
+}
+
+.dropdown-menu {
+	left: 50% !important;
+	margin-left: -90px;
+}
+
+li {
+	text-align: center;
+}
+
+.glyphicon {
+	font-size: 16px;
+}
+
+.dropdown-header {
+	font-family: 'News Cycle', sans-serif;
+}
