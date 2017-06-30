@@ -82,3 +82,18 @@ li {
 .dropdown-header {
 	font-family: 'News Cycle', sans-serif;
 }
+
+.modal-close {
+	border-radius: 50%;
+}
+
+.modal-title {
+	font-size: 28px;
+}
+.modal {
+	font-size: 18px;
+}
+
+.modal-ok {
+	font-size: 18px;
+}
