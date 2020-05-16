@@ -8,7 +8,7 @@
   },
   "scripts": {
       "surge": "./scripts/run-script.sh surge.sh",
-      "deploy": "./scripts/run-script.sh surge.sh ./src coreykovalik.surge.sh"
+      "deploy": "./scripts/run-script.sh deploy.sh"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
