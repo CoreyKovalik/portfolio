@@ -6,7 +6,7 @@
     "url": "https://github.com/udacity/responsive-images.git"
   },
   "scripts": {
-      "surge": "./scripts/surge.sh"
+      "surge": "./scripts/run-script.sh surge.sh"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
