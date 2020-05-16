@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Corey Kovalik - Portfolio</title>
+    <script>
+        const ROUTES = new Set(['/resume'])
+        const go404NotFound = () => {
+            window.location = `${window.location.origin}/${404}`
+        }
+
+        if (!ROUTES.has(window.location.pathname)) {
+            go404NotFound()
+        }
+    </script>
+  </head>
+  <body>
+      <div>This page hasn't been added yet!</div>
+      Click <a href="/">here</a> to return
+  </body>
+</html>
