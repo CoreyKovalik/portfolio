@@ -1,12 +1,14 @@
 {
-  "name": "reponsive-images",
-  "version": "0.1.0",
+  "name": "coreykovalik-portfolio",
+  "author": "Corey Kovalik",
+  "version": "0.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/udacity/responsive-images.git"
+    "url": "https://github.com/CoreyKovalik/portfolio"
   },
   "scripts": {
-      "surge": "./scripts/run-script.sh surge.sh"
+      "surge": "./scripts/run-script.sh surge.sh",
+      "deploy": "./scripts/run-script.sh surge.sh ./src coreykovalik.surge.sh"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
