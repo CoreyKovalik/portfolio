@@ -1,7 +1,7 @@
 source ./scripts/common/colors.sh
 source ./scripts/common/confirm.sh
 
-# CUSTOM_DOMAIN=coreykovalik.com
+CUSTOM_DOMAIN=coreykovalik.com
 SURGE_DOMAIN=coreykovalik.surge.sh
 
 function deploy() {
@@ -15,7 +15,7 @@ function deploy() {
     cp -R src/ dist/
 
     echo -e "${COLORS_GREEN}Deploying to: ${COLORS_WHITE} $1 ${COLORS_END}"
-    bash ./scripts/surge.sh ./dist "$SURGE_DOMAIN"
+    bash ./scripts/surge.sh ./dist "$CUSTOM_DOMAIN"
 }
 
 if confirm "Are you sure you want to deploy?"; then
